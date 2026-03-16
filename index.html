@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Terapis Homecare Bandung</title>
+<title>Terapis Homecare Bandung | Bekam Panggilan</title>
+
+<meta name="description" content="Layanan bekam, totok punggung, accupressure dan terapi lintah panggilan ke rumah wilayah Bandung.">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -38,11 +41,6 @@ color:white;
 text-align:center;
 border-radius:25px;
 margin:20px;
-}
-
-.hero h1{
-font-size:42px;
-font-weight:bold;
 }
 
 /* SECTION */
@@ -84,16 +82,6 @@ scroll-behavior:smooth;
 height:220px;
 border-radius:20px;
 flex-shrink:0;
-}
-
-/* TESTIMONI */
-
-.testimoni{
-background:#1c7c4c;
-color:white;
-padding:50px;
-border-radius:25px;
-margin:25px;
 }
 
 /* FOOTER */
@@ -206,8 +194,7 @@ src="https://images.unsplash.com/photo-1576091160550-2173dba999ef">
 <h3>Bekam / Hijamah</h3>
 
 <p>
-Terapi bekam membantu melancarkan peredaran darah,
-mengeluarkan racun tubuh dan meningkatkan kesehatan.
+Terapi bekam membantu melancarkan peredaran darah dan meningkatkan kesehatan tubuh.
 </p>
 
 </div>
@@ -228,8 +215,7 @@ src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
 <h3>Totok Punggung</h3>
 
 <p>
-Totok punggung membantu meredakan pegal,
-melancarkan aliran energi tubuh dan membuat tubuh lebih rileks.
+Totok punggung membantu meredakan pegal dan membuat tubuh lebih rileks.
 </p>
 
 </div>
@@ -240,7 +226,7 @@ melancarkan aliran energi tubuh dan membuat tubuh lebih rileks.
 
 </section>
 
-<!-- GALERI MENYAMPING -->
+<!-- GALERI -->
 
 <section id="galeri" class="section bg2">
 
@@ -266,25 +252,7 @@ melancarkan aliran energi tubuh dan membuat tubuh lebih rileks.
 
 </section>
 
-<!-- TESTIMONI -->
-
-<section class="testimoni">
-
-<div class="container text-center">
-
-<h2>Testimoni Pasien</h2>
-
-<p class="mt-4">
-"Setelah terapi bekam badan terasa lebih ringan dan segar."
-</p>
-
-<p><b>Pasien Bandung</b></p>
-
-</div>
-
-</section>
-
-<!-- ARTIKEL -->
+<!-- ARTIKEL LINK -->
 
 <section id="artikel" class="section bg1">
 
@@ -292,10 +260,9 @@ melancarkan aliran energi tubuh dan membuat tubuh lebih rileks.
 
 <h2 class="text-center mb-4">Artikel Kesehatan</h2>
 
-<p>
-Bekam adalah terapi tradisional yang membantu
-melancarkan peredaran darah dan meningkatkan kesehatan tubuh.
-</p>
+<ul id="artikel-list" class="list-group mb-4"></ul>
+
+<div id="artikel-view"></div>
 
 </div>
 
@@ -320,5 +287,72 @@ WhatsApp
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<script>
+
+const artikel=[
+
+{
+judul:"Manfaat Bekam untuk Kesehatan Tubuh",
+isi:"Bekam membantu melancarkan peredaran darah dan meningkatkan kesehatan tubuh secara alami."
+},
+
+{
+judul:"Totok Punggung untuk Mengatasi Pegal",
+isi:"Totok punggung membantu meredakan ketegangan otot dan membuat tubuh lebih rileks."
+},
+
+{
+judul:"Bekam Panggilan di Bandung",
+isi:"Layanan bekam panggilan memudahkan pasien melakukan terapi tanpa harus keluar rumah."
+},
+
+{
+judul:"Manfaat Accupressure",
+isi:"Accupressure membantu melancarkan aliran energi tubuh dan meningkatkan kesehatan."
+},
+
+{
+judul:"Terapi Lintah untuk Pengobatan Alternatif",
+isi:"Terapi lintah membantu melancarkan sirkulasi darah dan meningkatkan proses penyembuhan."
+}
+
+];
+
+const list=document.getElementById("artikel-list");
+const view=document.getElementById("artikel-view");
+
+artikel.forEach((a,i)=>{
+
+let li=document.createElement("li");
+li.className="list-group-item";
+
+li.innerHTML=`<a href="#" onclick="tampilArtikel(${i})">${a.judul}</a>`;
+
+list.appendChild(li);
+
+});
+
+function tampilArtikel(i){
+
+view.innerHTML=`
+
+<div class="card">
+
+<div class="card-body">
+
+<h3>${artikel[i].judul}</h3>
+
+<p>${artikel[i].isi}</p>
+
+</div>
+
+</div>
+
+`;
+
+}
+
+</script>
+
 </body>
-                                                                      </html>
+  </html>
