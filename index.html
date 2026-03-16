@@ -1,15 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Terapis Homecare Bandung | Bekam & Totok Panggilan</title>
-
-<meta name="description" content="Layanan bekam, totok punggung, accupressure dan terapi lintah panggilan ke rumah di Bandung.">
+<title>Terapis Homecare Bandung</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -17,8 +13,10 @@
 
 body{
 font-family:Arial;
-background:#f5f7fb;
+background:#f4f7fb;
 }
+
+/* NAVBAR */
 
 .navbar{
 border-radius:0 0 20px 20px;
@@ -27,6 +25,8 @@ border-radius:0 0 20px 20px;
 .navbar-brand img{
 height:45px;
 }
+
+/* HERO */
 
 .hero{
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
@@ -41,9 +41,11 @@ margin:20px;
 }
 
 .hero h1{
-font-size:45px;
+font-size:42px;
 font-weight:bold;
 }
+
+/* SECTION */
 
 .section{
 padding:60px;
@@ -59,6 +61,8 @@ background:white;
 background:#e8f6f1;
 }
 
+/* LAYANAN */
+
 .service-img{
 width:100%;
 height:250px;
@@ -66,12 +70,23 @@ object-fit:cover;
 border-radius:20px;
 }
 
-.gallery img{
-width:100%;
-height:200px;
-object-fit:cover;
-border-radius:15px;
+/* GALERI MENYAMPING */
+
+.gallery-scroll{
+display:flex;
+overflow-x:auto;
+gap:20px;
+padding:10px;
+scroll-behavior:smooth;
 }
+
+.gallery-scroll img{
+height:220px;
+border-radius:20px;
+flex-shrink:0;
+}
+
+/* TESTIMONI */
 
 .testimoni{
 background:#1c7c4c;
@@ -81,6 +96,8 @@ border-radius:25px;
 margin:25px;
 }
 
+/* FOOTER */
+
 .footer{
 background:#0f5132;
 color:white;
@@ -88,6 +105,8 @@ padding:40px;
 text-align:center;
 border-radius:25px 25px 0 0;
 }
+
+/* WHATSAPP */
 
 .wa-float{
 position:fixed;
@@ -126,12 +145,16 @@ font-weight:bold;
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+
 <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+
 <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+
 <li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li>
 
 <li class="nav-item">
-<a class="btn btn-success" href="https://wa.me/6282126357983?text=Saya%20ingin%20reservasi%20terapi">
+<a class="btn btn-success"
+href="https://wa.me/6282126357983?text=Saya ingin reservasi terapi">
 Reservasi
 </a>
 </li>
@@ -151,10 +174,10 @@ Reservasi
 <h1>TERAPIS HOMECARE BANDUNG</h1>
 
 <p>
-Layanan Bekam • Totok Punggung • Accupressure • Terapi Lintah Panggilan ke Rumah
+Bekam • Totok Punggung • Accupressure • Terapi Lintah
 </p>
 
-<a href="https://wa.me/6282126357983?text=Saya%20ingin%20reservasi%20terapi"
+<a href="https://wa.me/6282126357983?text=Saya ingin reservasi terapi"
 class="btn btn-success btn-lg mt-3">
 Reservasi Sekarang
 </a>
@@ -217,7 +240,7 @@ melancarkan aliran energi tubuh dan membuat tubuh lebih rileks.
 
 </section>
 
-<!-- GALERI -->
+<!-- GALERI MENYAMPING -->
 
 <section id="galeri" class="section bg2">
 
@@ -225,23 +248,17 @@ melancarkan aliran energi tubuh dan membuat tubuh lebih rileks.
 
 <h2 class="text-center mb-4">Galeri Terapi</h2>
 
-<div class="row gallery g-4">
+<div class="gallery-scroll">
 
-<div class="col-md-3">
 <img src="https://images.unsplash.com/photo-1584515933487-779824d29309">
-</div>
 
-<div class="col-md-3">
 <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
-</div>
 
-<div class="col-md-3">
 <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef">
-</div>
 
-<div class="col-md-3">
 <img src="https://images.unsplash.com/photo-1580281657521-9c2f3f7a4d27">
-</div>
+
+<img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074">
 
 </div>
 
@@ -275,36 +292,10 @@ melancarkan aliran energi tubuh dan membuat tubuh lebih rileks.
 
 <h2 class="text-center mb-4">Artikel Kesehatan</h2>
 
-<div class="accordion" id="artikelBox">
-
-<div class="accordion-item">
-
-<h2 class="accordion-header">
-
-<button class="accordion-button"
-data-bs-toggle="collapse"
-data-bs-target="#a1">
-
-Manfaat Bekam untuk Kesehatan
-
-</button>
-
-</h2>
-
-<div id="a1" class="accordion-collapse collapse show">
-
-<div class="accordion-body">
-
-Bekam membantu melancarkan peredaran darah
-serta meningkatkan kesehatan tubuh secara alami.
-
-</div>
-
-</div>
-
-</div>
-
-</div>
+<p>
+Bekam adalah terapi tradisional yang membantu
+melancarkan peredaran darah dan meningkatkan kesehatan tubuh.
+</p>
 
 </div>
 
@@ -323,11 +314,11 @@ serta meningkatkan kesehatan tubuh secara alami.
 </footer>
 
 <a class="wa-float"
-href="https://wa.me/6282126357983?text=Saya%20ingin%20reservasi%20terapi">
+href="https://wa.me/6282126357983?text=Saya ingin reservasi terapi">
 WhatsApp
 </a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-</html>
+                                                                      </html>
