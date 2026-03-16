@@ -17,34 +17,30 @@
         .navbar {
             border-radius: 0 0 20px 20px;
             background-color: #fff !important;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .navbar-brand img {
             height: 50px;
-            object-fit: contain;
+            width: auto;
         }
 
         /* HERO */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url("https://cdn.pixabay.com/photo/2017/01/29/21/23/wellness-2020334_1280.jpg");
+                        url("https://picsum.photos/id/237/1200/600");
             background-size: cover;
             background-position: center;
-            padding: 180px 20px;
+            padding: 120px 20px;
             color: white;
             text-align: center;
             border-radius: 25px;
-            margin: 20px;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            margin: 10px;
         }
 
         /* SECTION */
         .section {
-            padding: 60px;
-            margin: 25px;
+            padding: 30px 20px;
+            margin: 15px;
             border-radius: 25px;
         }
         .bg1 { background: white; }
@@ -54,34 +50,32 @@
         .card {
             border-radius: 15px;
             overflow: hidden;
-            transition: transform 0.3s ease;
             border: 2px solid #0f5132;
-        }
-        .card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 4px 15px rgba(15,81,50,0.2);
+            margin-bottom: 20px;
         }
         .card img {
-            height: 200px;
+            height: 150px;
+            width: 100%;
             object-fit: cover;
         }
 
         /* GALERI */
-        .gallery-row img {
+        .gallery-img {
             border-radius: 15px;
-            height: 300px;
-            object-fit: cover;
+            height: 200px;
             width: 100%;
+            object-fit: cover;
+            margin-bottom: 10px;
         }
 
         /* FOOTER */
         .footer {
             background: #0f5132;
             color: white;
-            padding: 40px;
+            padding: 20px;
             text-align: center;
             border-radius: 25px 25px 0 0;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         /* WHATSAPP */
@@ -91,20 +85,16 @@
             right: 20px;
             background: #25D366;
             color: white;
-            padding: 15px 20px;
+            padding: 10px 15px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
             z-index: 999;
         }
 
-        /* TOMBOL */
         .btn-success {
             background-color: #0f5132 !important;
             border-color: #0f5132 !important;
-        }
-        .btn-success:hover {
-            background-color: #0a3c24 !important;
         }
     </style>
 </head>
@@ -114,8 +104,8 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <!-- LOGO SESUAI YANG KAMU KIRIM -->
-            <img src="https://cdn.pixabay.com/photo/2020/09/09/17/18/health-5557641_1280.png" alt="Logo Terapis Home Care Bandung" style="background-color:#fff; padding:5px;">
+            <!-- LOGO Kesehatan -->
+            <img src="https://picsum.photos/id/180/100/50" alt="Logo Terapis Home Care Bandung">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
@@ -143,40 +133,41 @@
 <!-- LAYANAN -->
 <section id="layanan" class="section bg1">
     <div class="container text-center">
-        <h2 class="mb-5 text-success">Layanan Kami</h2>
-        <div class="row g-4">
+        <h2 class="mb-4 text-success">Layanan Kami</h2>
+        <div class="row">
             <!-- BEKAM -->
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
-                    <img src="https://cdn.pixabay.com/photo/2018/03/12/19/02/cupping-therapy-3220691_1280.jpg" alt="Terapi Bekam / Hijamah">
-                    <div class="card-body">
-                        <h5 class="card-title">Bekam / Hijamah</h5>
+                    <img src="https://picsum.photos/id/96/300/150" alt="Terapi Bekam / Hijamah">
+                    <div class="p-2">
+                        <h5>Bekam / Hijamah</h5>
                     </div>
                 </div>
             </div>
             <!-- ACCUPRESSURE -->
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
-                    <img src="https://cdn.pixabay.com/photo/2016/10/04/13/59/reflexology-1715694_1280.jpg" alt="Terapi Accupressure">
-                    <div class="card-body">
-                        <h5 class="card-title">Accupressure</h5>
+                    <img src="https://picsum.photos/id/177/300/150" alt="Terapi Accupressure">
+                    <div class="p-2">
+                        <h5>Accupressure</h5>
                     </div>
                 </div>
             </div>
             <!-- TERAPI LINTAH -->
-            <div class="card">
-                    <img src="https://cdn.pixabay.com/photo/2017/08/06/09/11/medicine-2589546_1280.jpg" alt="Terapi Lintah">
-                    <div class="card-body">
-                        <h5 class="card-title">Terapi Lintah</h5>
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <img src="https://picsum.photos/id/119/300/150" alt="Terapi Lintah">
+                    <div class="p-2">
+                        <h5>Terapi Lintah</h5>
                     </div>
                 </div>
             </div>
             <!-- TOTOK PUNGGUNG -->
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/22/21/03/massage-1850083_1280.jpg" alt="Totok Punggung">
-                    <div class="card-body">
-                        <h5 class="card-title">Totok Punggung</h5>
+                    <img src="https://picsum.photos/id/249/300/150" alt="Totok Punggung">
+                    <div class="p-2">
+                        <h5>Totok Punggung</h5>
                     </div>
                 </div>
             </div>
@@ -187,8 +178,8 @@
 <!-- ARTIKEL -->
 <section id="artikel" class="section bg2">
     <div class="container">
-        <h2 class="text-center mb-4 text-success">Artikel Kesehatan</h2>
-        <ul class="list-unstyled text-center fs-5">
+        <h2 class="text-center mb-3 text-success">Artikel Kesehatan</h2>
+        <ul class="text-center">
             <li class="mb-2"><a href="#" class="text-success text-decoration-none">Manfaat Bekam untuk Kebugaran Tubuh</a></li>
             <li class="mb-2"><a href="#" class="text-success text-decoration-none">Manfaat Totok Punggung untuk Relaksasi</a></li>
             <li><a href="#" class="text-success text-decoration-none">Apa itu Accupressure</a></li>
@@ -199,15 +190,15 @@
 <!-- GALERI -->
 <section id="galeri" class="section bg1">
     <div class="container">
-        <h2 class="text-center mb-5 text-success">Galeri Terapi</h2>
-        <div class="row gallery-row g-3">
+        <h2 class="text-center mb-3 text-success">Galeri Terapi</h2>
+        <div class="row">
             <div class="col-md-6">
-                <img src="https://cdn.pixabay.com/photo/2016/11/22/21/03/massage-1850083_1280.jpg" alt="Totok Punggung">
-                <p class="text-center mt-2 fw-bold">Totok Punggung</p>
+                <img src="https://picsum.photos/id/249/600/200" alt="Totok Punggung" class="gallery-img">
+                <p class="text-center fw-bold">Totok Punggung</p>
             </div>
             <div class="col-md-6">
-                <img src="https://cdn.pixabay.com/photo/2017/08/06/09/11/medicine-2589546_1280.jpg" alt="Terapi Lintah">
-                <p class="text-center mt-2 fw-bold">Terapi Lintah</p>
+                <img src="https://picsum.photos/id/119/600/200" alt="Terapi Lintah" class="gallery-img">
+                <p class="text-center fw-bold">Terapi Lintah</p>
             </div>
         </div>
     </div>
@@ -217,7 +208,7 @@
 <footer class="footer">
     <h4>Terapis Home Care Bandung</h4>
     <p>Bandung & Sekitarnya</p>
-    <p class="mt-2">© 2024 - Semua Hak Dilindungi</p>
+    <p style="font-size:0.8rem;">© 2024 - Semua Hak Dilindungi</p>
 </footer>
 
 <!-- WHATSAPP FLOAT -->
